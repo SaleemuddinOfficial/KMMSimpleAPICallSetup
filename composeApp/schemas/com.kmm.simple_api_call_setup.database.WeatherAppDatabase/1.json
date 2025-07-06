@@ -1,0 +1,157 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "c1bf5c3735310011f88dfa83a85431b8",
+    "entities": [
+      {
+        "tableName": "WeatherResponseDB",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `elevation` TEXT NOT NULL, `generationtimeMs` REAL NOT NULL, `latitude` REAL NOT NULL, `longitude` REAL NOT NULL, `timezone` TEXT NOT NULL, `timezoneAbbreviation` TEXT NOT NULL, `utcOffsetSeconds` INTEGER NOT NULL, `intervalCurrent` INTEGER NOT NULL, `isDayCurrent` INTEGER NOT NULL, `temperatureCurrent` REAL NOT NULL, `timeCurrent` TEXT NOT NULL, `weatherCodeCurrent` INTEGER NOT NULL, `windDirectionCurrent` INTEGER NOT NULL, `windSpeedCurrent` REAL NOT NULL, `intervalUnits` TEXT NOT NULL, `isDayUnits` TEXT NOT NULL, `temperatureUnits` TEXT NOT NULL, `timeUnits` TEXT NOT NULL, `weatherCodeUnits` TEXT NOT NULL, `windDirectionUnits` TEXT NOT NULL, `windSpeedUnits` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "elevation",
+            "columnName": "elevation",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "generationtimeMs",
+            "columnName": "generationtimeMs",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "latitude",
+            "columnName": "latitude",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "longitude",
+            "columnName": "longitude",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timezone",
+            "columnName": "timezone",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timezoneAbbreviation",
+            "columnName": "timezoneAbbreviation",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "utcOffsetSeconds",
+            "columnName": "utcOffsetSeconds",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "intervalCurrent",
+            "columnName": "intervalCurrent",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isDayCurrent",
+            "columnName": "isDayCurrent",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "temperatureCurrent",
+            "columnName": "temperatureCurrent",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timeCurrent",
+            "columnName": "timeCurrent",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "weatherCodeCurrent",
+            "columnName": "weatherCodeCurrent",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "windDirectionCurrent",
+            "columnName": "windDirectionCurrent",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "windSpeedCurrent",
+            "columnName": "windSpeedCurrent",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "intervalUnits",
+            "columnName": "intervalUnits",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isDayUnits",
+            "columnName": "isDayUnits",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "temperatureUnits",
+            "columnName": "temperatureUnits",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timeUnits",
+            "columnName": "timeUnits",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "weatherCodeUnits",
+            "columnName": "weatherCodeUnits",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "windDirectionUnits",
+            "columnName": "windDirectionUnits",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "windSpeedUnits",
+            "columnName": "windSpeedUnits",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'c1bf5c3735310011f88dfa83a85431b8')"
+    ]
+  }
+}

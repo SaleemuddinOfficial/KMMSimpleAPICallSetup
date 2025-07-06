@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string name="city_name">City Name</string>
+    <string name="current_temperature">Temperature</string>
+    <string name= "current_time">Time</string>
+    <string name="wind">Wind</string>
+    <string name="elevation">Elevation</string>
+    <string name="day_night">Day/Night:</string>
+    <string name="weather_code">Weather Code</string>
+</resources>
